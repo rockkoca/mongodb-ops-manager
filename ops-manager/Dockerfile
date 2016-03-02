@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-ENV OPS_MGR_VERSION=2.0.1.332-1
+ENV OPS_MGR_VERSION=2.0.2.337-1
 
 RUN apt-get update \
  && apt-get install -y wget vim curl \
