@@ -8,7 +8,7 @@ FROM ubuntu:18.04
 # stable:        https://downloads.mongodb.com/on-prem-mms/deb/mongodb-mms_4.0.18.50621.20200512T1431Z-1_x86_64.deb
 
 ARG OPS_MGR_VERSION=4.2.15.56937.20200701T0316Z-1
-ARG OPS_MGR_TAg=4.2.15
+ARG OPS_MGR_TAG=4.2.15
 
 RUN apt-get update \
  && apt-get install -y wget vim curl net-tools libsasl2-2 libsnmp30 ca-certificates \

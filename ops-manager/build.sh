@@ -8,10 +8,13 @@
 
 # set -ex
 
+ARG OPS_MGR_VERSION=4.2.15.56937.20200701T0316Z-1
+ARG OPS_MGR_TAG=4.2.15
+
 build() {
 
-  echo docker build --no-cache --build-arg OPSMGR_VERSION=${VERSION} --build-arg OPSMGR_TAG-${TAg} -t ${image}:${tag} .
-  docker build --no-cache --build-arg OPSMGR_VERSION=${VERSION} --build-arg OPSMGR_TAG-${TAg} -t ${image}:${tag} .
+  echo docker build --no-cache --build-arg OPS_MGR_VERSION=${VERSION} --build-arg OPS_MGR_TAG=${TAG} -t ${image}:${tag} .
+  docker build --no-cache --build-arg OPS_MGR_VERSION=${VERSION} --build-arg OPS_MGR_TAG=${TAG} -t ${image}:${tag} .
 
   if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == false ]]; then
     docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
