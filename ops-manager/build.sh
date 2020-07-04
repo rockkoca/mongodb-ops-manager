@@ -8,9 +8,6 @@
 
 # set -ex
 
-ARG OPS_MGR_VERSION=4.2.15.56937.20200701T0316Z-1
-ARG OPS_MGR_TAG=4.2.15
-
 build() {
 
   echo docker build --no-cache --build-arg OPS_MGR_VERSION=${VERSION} --build-arg OPS_MGR_TAG=${TAG} -t ${image}:${tag} .
