@@ -1,6 +1,7 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
-ENV OPS_MGR_VERSION=2.0.6.363-1
+# https://www.mongodb.com/try/download/ops-manager
+ARG OPS_MGR_VERSION=4.2.15.56937.20200701T0316Z-1
 
 RUN apt-get update \
  && apt-get install -y wget vim curl libsasl2-2 libsnmp30 ca-certificates \
