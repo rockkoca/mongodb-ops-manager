@@ -5,7 +5,7 @@ FROM ubuntu:18.04
 
 # stable:        https://downloads.mongodb.com/on-prem-mms/deb/mongodb-mms_4.2.15.56937.20200701T0316Z-1_x86_64.deb
 # rapid release: https://downloads.mongodb.com/on-prem-mms/deb/mongodb-mms_4.3.9.100.20200331T2242Z-1_x86_64.deb
-# stable:        https://downloads.mongodb.com/on-prem-mms/msi/mongodb-mms-4.0.18.50621.20200512T1445Z-1.x86_64.msi
+# stable:        https://downloads.mongodb.com/on-prem-mms/deb/mongodb-mms_4.0.18.50621.20200512T1431Z-1_x86_64.deb
 
 ARG OPS_MGR_VERSION=4.2.15.56937.20200701T0316Z-1
 ARG OPS_MGR_TAg=4.2.15

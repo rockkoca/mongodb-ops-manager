@@ -5,11 +5,13 @@ services:
         image: mongo:${MONGO_TAG}
 
     mongo-opsmgr:
-        # build: . # enable it, when test your change
+        #build: . # enable it, when test your change
         image: ubuntulinux/mongo-opsmgr:${OPSMGR_TAG}
+        #volumes:
+        #  - custom-app.properties:/opt/mongodb/mms/conf/conf-mms.properties
         links:
           - "mongo:db"
         ports:
-          - "8080"
+          - "8080:8080"
         depends_on:
           - mongo
