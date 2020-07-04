@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    mongo:
+        image: mongo:${MONGO_TAG}
+
+    mongo-opsmgr:
+        # build: . # enable it, when test your change
+        image: ubuntulinux/mongo-opsmgr:${OPSMGR_TAG}
+        links:
+          - "mongo:db"
+        ports:
+          - "8080"
+        depends_on:
+          - mongo
